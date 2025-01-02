@@ -5,8 +5,22 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
     '@nuxt/fonts',
-    '@nuxt/icon',
+    '@nuxtjs/tailwindcss',
     '@nuxt/image',
-    '@nuxtjs/tailwindcss'
-  ]
+    '@nuxt/icon',
+    'radix-vue/nuxt'
+  ],
+  target: 'static',
+  router: {
+    base: '/',
+    // buildAssetsDir: '/'
+  },
+  css: ['@/assets/css/main.css'],
+  fonts: {
+    families: [
+      { name: 'IBM Plex Sans', provider: 'google' }, // sans
+      { name: 'IBM Plex Mono', provider: 'google' }, // mono
+      { name: 'IBM Plex Serif', provider: 'google' }, // display
+    ],
+  },
 })

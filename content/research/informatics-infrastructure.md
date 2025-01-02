@@ -1,3 +1,6 @@
+---
+slug: informatics-infrastructure
+---
 The importance of curated informatics resources: data and tools – the gateway to knowledge in biology
 One of the major challenges in modern systems biology is the integration of diverse high and low throughput measurements on biological systems and deciphering biological mechanisms and pathways. My laboratory has been engaged in multi-omics multi-scale data integration for over a decade. For nearly a decade, we worked on integrating diverse data from measurements on macrophages and the progress in this area is reported across several publications. First, we used time series measurements of phosphoproteins in ligand treated macrophages along with time series cytokine readouts to understand the cellular signaling processes associated with macrophage cells. 
 
