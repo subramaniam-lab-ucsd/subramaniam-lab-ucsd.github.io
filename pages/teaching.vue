@@ -1,3 +1,3 @@
 <template>
-    <ContentDoc path="/teaching" />
+  <ContentDoc path="/teaching" />
 </template>

@@ -22,4 +22,3 @@ if (!article) {
   })
 }
 </script>
-
