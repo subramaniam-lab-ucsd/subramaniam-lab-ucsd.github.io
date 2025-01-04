@@ -16,4 +16,5 @@ export default defineNuxtConfig({
       { name: 'IBM Plex Serif', provider: 'google' }, // display
     ],
   },
+  ssr: true,
 })
