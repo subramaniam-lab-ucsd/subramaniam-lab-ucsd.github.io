@@ -1,0 +1,1 @@
+import t from"./FoTwneWn.js";import{_ as r,e as c,o as n}from"./CxNt1kDx.js";import"./D55P3Lse.js";import"./dQd6IjGx.js";import"./C-v3KzvZ.js";import"./CxYJgpPD.js";import"./Df0z_OtR.js";import"./DUkbgrJp.js";import"./hAKLpAQ3.js";import"./Cz4kZWoF.js";const e={};function m(p,i){const o=t;return n(),c(o,{path:"/contact"})}const B=r(e,[["render",m]]);export{B as default};
