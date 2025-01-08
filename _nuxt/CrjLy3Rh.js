@@ -1,0 +1,1 @@
+import t from"./D0Cs_9-1.js";import{_ as r,e as c,o as i}from"./Aac_uPsT.js";import"./C8_jxWeo.js";import"./Se1IPa8O.js";import"./C-v3KzvZ.js";import"./CxYJgpPD.js";import"./BgZrV5lH.js";import"./rJ7bHXpa.js";import"./Di2_YS9Q.js";import"./CRVhQ8dH.js";const n={};function p(e,m){const o=t;return i(),c(o,{path:"/publications"})}const k=r(n,[["render",p]]);export{k as default};

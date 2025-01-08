@@ -1,0 +1,1 @@
+import t from"./D0Cs_9-1.js";import{_ as r,e as c,o as e}from"./Aac_uPsT.js";import"./C8_jxWeo.js";import"./Se1IPa8O.js";import"./C-v3KzvZ.js";import"./CxYJgpPD.js";import"./BgZrV5lH.js";import"./rJ7bHXpa.js";import"./Di2_YS9Q.js";import"./CRVhQ8dH.js";const n={};function i(m,p){const o=t;return e(),c(o,{path:"/teaching"})}const k=r(n,[["render",i]]);export{k as default};
