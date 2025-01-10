@@ -7,9 +7,9 @@
       <slot />
     </main>
   </body>
-  <footer>
-    <div>2025 Subramaniam Lab</div>
-  </footer>
+  <div>
+    <Footer />
+  </div>
 </template>
 
 <style scoped>
