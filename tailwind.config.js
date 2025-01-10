@@ -16,7 +16,14 @@ export default {
             serif: ['IBM Plex Serif'], // Fallback to serif if IBM Plex Serif is unavailable
             mono: ['IBM Plex Mono'], // Fallback to mono if IBM Plex Mono is unavailable
         },
+        colors: {
+          'ucsd-navy': '#182B49',
+          'ucsd-blue': '#00629B',
+          'ucsd-yellow': '#FFCD00',
+          'ucsd-gold': '#C69214',
+        },
       },
+
     },
     // plugins: [require('@tailwindcss/typography')],
   }
