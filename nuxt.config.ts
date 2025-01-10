@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     base: '/',
     // buildAssetsDir: '/'
   },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+  },
   css: ['@/assets/css/main.css'],
   fonts: {
     families: [

@@ -1,11 +1,15 @@
 <template>
+  <header class="bg-ucsd-navy text-white">
     <Navigation />
-  <body>
+  </header>
+  <body class="bg-ucsd-navy text-white p-4">
     <main class="flex-grow layout-container pt-12">
       <slot />
     </main>
   </body>
+  <div class="bg-ucsd-navy">
     <Footer />
+  </div>
 </template>
 
 <style scoped>

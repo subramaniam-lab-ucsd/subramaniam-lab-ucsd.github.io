@@ -15,16 +15,16 @@
         <!-- Hamburger Icon -->
         <button
           type="button"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-slate-700"
+          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 "
           @click="mobileMenuOpen = true">
           <Bars3Icon class="size-6" aria-hidden="true" />
         </button>
       </div>
       <PopoverGroup class="hidden lg:flex lg:gap-x-12">
         <Popover class="relative">
-          <PopoverButton class="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+          <PopoverButton class="flex items-center gap-x-1 text-sm/6 font-semibold">
             Research
-            <ChevronDownIcon class="size-5 flex-none text-gray-400" aria-hidden="true" />
+            <ChevronDownIcon class="size-5 flex-none" aria-hidden="true" />
           </PopoverButton>
 
           <transition
@@ -45,15 +45,15 @@
                     class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <component
                       :is="item.icon"
-                      class="size-6 text-gray-600 group-hover:text-indigo-600"
+                      class="size-6  group-hover:text-indigo-600"
                       aria-hidden="true" />
                   </div>
                   <div class="flex-auto">
-                    <NuxtLink :to="`/research${item.path}`" class="block font-semibold text-gray-900">
+                    <NuxtLink :to="`/research${item.path}`" class="block font-semibold ">
                       {{ item.name }}
                       <span class="absolute inset-0" />
                     </NuxtLink>
-                    <p class="mt-1 text-gray-600">{{ item.description }}</p>
+                    <p class="mt-1 ">{{ item.description }}</p>
                   </div>
                 </div>
               </div>
@@ -62,8 +62,8 @@
                   v-for="item in callsToAction"
                   :key="item.name"
                   :href="item.href"
-                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold text-gray-900 hover:bg-gray-100">
-                  <component :is="item.icon" class="size-5 flex-none text-gray-400" aria-hidden="true" />
+                  class="flex items-center justify-center gap-x-2.5 p-3 text-sm/6 font-semibold  hover:bg-gray-100">
+                  <component :is="item.icon" class="size-5 flex-none " aria-hidden="true" />
                   {{ item.name }}
                 </a>
               </div>
@@ -71,14 +71,14 @@
           </transition>
         </Popover>
 
-        <NuxtLink to="/publications" class="text-sm/6 font-semibold text-gray-900">Publications</NuxtLink>
-        <NuxtLink to="/teaching" class="text-sm/6 font-semibold text-gray-900">Teaching</NuxtLink>
-        <NuxtLink to="/members" class="text-sm/6 font-semibold text-gray-900">Members</NuxtLink>
-        <NuxtLink to="/contact" class="text-sm/6 font-semibold text-gray-900">Contact</NuxtLink>
+        <NuxtLink to="/publications" class="text-sm/6 font-semibold ">Publications</NuxtLink>
+        <NuxtLink to="/teaching" class="text-sm/6 font-semibold ">Teaching</NuxtLink>
+        <NuxtLink to="/members" class="text-sm/6 font-semibold ">Members</NuxtLink>
+        <NuxtLink to="/contact" class="text-sm/6 font-semibold ">Contact</NuxtLink>
       </PopoverGroup>
 
       <!-- <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+          <a href="#" class="text-sm/6 font-semibold ">Log in <span aria-hidden="true">&rarr;</span></a>
         </div> -->
     </nav>
 
@@ -91,7 +91,7 @@
           <NuxtLink to="/" class="-m-1.5 p-1.5">
             <h1 class="font-mono text-xl sm:text-2xl uppercase">Subramaniam Lab</h1>
           </NuxtLink>
-          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" @click="mobileMenuOpen = false">
+          <button type="button" class="-m-2.5 rounded-md p-2.5 " @click="mobileMenuOpen = false">
             <span class="sr-only">Close menu</span>
             <XMarkIcon class="size-6" aria-hidden="true" />
           </button>
@@ -101,7 +101,7 @@
             <div class="space-y-2 py-6">
               <Disclosure as="div" class="-mx-3" v-slot="{ open }">
                 <DisclosureButton
-                  class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
+                  class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold  hover:bg-gray-50">
                   Research
                   <ChevronDownIcon :class="[open ? 'rotate-180' : '', 'size-5 flex-none']" aria-hidden="true" />
                 </DisclosureButton>
@@ -111,34 +111,34 @@
                     :key="item.name"
                     as="a"
                     :href="`/research${item.path}`"
-                    class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold text-gray-900 hover:bg-gray-50"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-sm/7 font-semibold  hover:bg-gray-50"
                     >{{ item.name }}</DisclosureButton
                   >
                 </DisclosurePanel>
               </Disclosure>
               <NuxtLink
                 to="/publications"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50"
                 >Publications</NuxtLink
               >
               <NuxtLink
                 to="/teaching"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50"
                 >Teaching</NuxtLink
               >
               <NuxtLink
                 to="/members"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50"
                 >Members</NuxtLink
               >
               <NuxtLink
                 to="/contact"
-                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold  hover:bg-gray-50"
                 >Contact</NuxtLink
               >
             </div>
             <!-- <div class="py-6">
-                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold  hover:bg-gray-50">Log in</a>
               </div> -->
           </div>
         </div>

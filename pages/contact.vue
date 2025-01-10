@@ -1,6 +1,5 @@
 <template>
-  <div class="bg-ucsd-blue"></div>
-  <h1 class="text-ucsd-blue">Contact Us</h1>
+  <h1 class="text-ucsd-yellow uppercase font-mono">Contact Us</h1>
   <div class="grid grid-cols-5 gap-4 sm:gap-8 pt-12">
     <div class="col-span-5 md:col-span-2">
       <section>
@@ -35,5 +34,9 @@
 <script setup>
 
 const { data: doc } = await useAsyncData('contact', () => queryContent('/contact').findOne())
+
+definePageMeta({
+  layout: 'contactsblue'
+})
 
 </script>
