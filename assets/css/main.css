@@ -4,7 +4,7 @@
 
 @layer base {
   .layout-container {
-    @apply container mx-auto max-w-3xl p-4 sm:p-6;
+    @apply container mx-auto max-w-5xl p-4 sm:p-6;
   }
   h1 {
     @apply text-4xl py-4 font-bold tracking-tight leading-tight sm:text-5xl;
