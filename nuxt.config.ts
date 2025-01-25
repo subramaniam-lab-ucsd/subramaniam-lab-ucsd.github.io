@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxt/fonts', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/icon', 'radix-vue/nuxt'],
+  modules: ['@nuxt/content','@nuxt/fonts', '@nuxtjs/tailwindcss', '@nuxt/image', '@nuxt/icon', 'radix-vue/nuxt'],
   target: 'static',
   router: {
     base: '/',

@@ -31,9 +31,9 @@
 </template>
 
 
-<script setup>
+<script setup lang="ts">
 
-const { data: doc } = await useAsyncData('contact', () => queryContent('/contact').findOne())
+const doc = await useAsyncData(() => queryCollection('root').path('/contact').first())
 
 definePageMeta({
   layout: 'contactsblue'
